@@ -41,9 +41,7 @@ function Contact() {
         </ul>
       </div>
       </div>
-      <div>
-        <Footer/>
-      </div>
+      
     </div>
   );
 }

@@ -13,13 +13,13 @@ const NavBar = () => {
       </div>
       <div className="right-section">
 
-        <Link to="/">View Courses</Link> {/* Added class "active" */}
+        <Link to="/user">View Courses</Link> {/* Added class "active" */}
         <Link to="/enquiry">Add Enquiry</Link>
         <a href="#learning">View Enquiry</a>
         <a href="#wishlist">WishList</a>
         <Link to="/cart">Cart</Link>
-        <a href="#cart">Student</a>
-        <a href="#profile">Logout</a>
+        <Link to="/user">Student</Link>
+        <Link to="/">Logout</Link>
       </div>
     </div>
   );

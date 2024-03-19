@@ -35,9 +35,7 @@ function Services() {
          
         </ul>
       </section>
-      <div>
-        <Footer/>
-      </div>
+      
     </div>
   );
 }

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { BsEye, BsEyeSlash } from 'react-icons/bs';
 import '../assets/Login.css';
@@ -7,16 +8,13 @@ import NavigationBar from '../Components/NavigationBar';
 function Login() {
     const initialStateErrors = {
         email: { required: false, invalid: false },
-        password: { required: false, invalid: false, format: false },
-      
-       
+        password: { required: false },
         custom_error: null,
     };
 
     const [errors, setErrors] = useState(initialStateErrors);
     const [load, setLoad] = useState(false);
     const [register_inputs, setRegisterInputs] = useState({
-       
         email: '',
         password: '',
     });
@@ -50,18 +48,8 @@ function Login() {
         if (!register_inputs.password) {
             error.password.required = true;
             hasError = true;
-        } else if (register_inputs.password.length < 8) {
-            error.password.invalid = true;
-            hasError = true;
-        } else {
-            const passwordPattern = /^(?=.[a-z])(?=.[A-Z])(?=.[!@#$%^&()_+]).{8,}$/;
-            if (!passwordPattern.test(register_inputs.password)) {
-                error.password.format = true;
-                hasError = true;
-            }
         }
 
-      
         if (!hasError) {
             setLoad(true);
             if (register_inputs.email.trim() === 'admin@gmail.com' && register_inputs.password.trim() === 'Admin@12345') {
@@ -69,7 +57,6 @@ function Login() {
                 navigate('/admin');
             } else {
                 navigate('/user');
-                
             }
         }
         setErrors(error);
@@ -106,9 +93,7 @@ function Login() {
                                             {showPassword ? <BsEyeSlash /> : <BsEye />}
                                         </span>
                                     </div>
-                                    {errors.password.required ? <span className="text-danger">Password is required.</span> : null}
-                                    {errors.password.invalid ? <span className="text-danger">Password should contain at least 8 characters.</span> : null}
-                                    {errors.password.format ? <span className="text-danger">Password must contain at least one uppercase letter, one lowercase letter, and one special character.</span> : null}
+                                    {errors.password.required && <span className="text-danger">Password is required.</span>}
                                 </div>
                                 <div>
                                     {errors.custom_error ? <span className="text-danger">{errors.custom_error}</span> : null}

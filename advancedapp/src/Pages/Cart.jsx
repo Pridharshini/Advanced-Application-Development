@@ -25,7 +25,7 @@ const Cart = () => {
             <td>6 months</td>
             <td>₹10,000-₹15,000</td>
             <td>
-              <button>Make Payment</button>
+            <button>Make Payment</button>
             </td>
           </tr>
           <tr>

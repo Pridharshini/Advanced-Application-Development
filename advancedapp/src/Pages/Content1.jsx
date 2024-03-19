@@ -1,12 +1,12 @@
 import React from 'react';
 import '../Pages/Content1.css';
 
-import NavBar from '../Components/NavBar';
+
 
 const Content1 = () => {
   return (
     <div>
-    <NavBar/>
+
     <div className="container">
       <div className="course-details">
         <h1> Cambridge English: Key (KET)</h1>

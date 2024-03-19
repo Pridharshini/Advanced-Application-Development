@@ -32,7 +32,7 @@ function AdminCard() {
         <img className="aa4im product-image" src="https://cdn-icons-png.flaticon.com/256/1/1201.png" alt="Denim Jeans" />
         <div className="aa4contain">
           <h1>Delete Courses</h1>
-          <button className="viewbut">View</button>
+          <Link to ="/admintable"><button className="viewbut">View</button></Link>
         </div>
       </div>
     </div>

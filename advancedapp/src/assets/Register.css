@@ -1,8 +1,8 @@
-/the entire register container/
+
 .register-block .container {
-  max-width: 600px;
-  margin-top: 6%;
-  margin-left: 25%;
+  width: 50%;
+  margin-top: 7%;
+  margin-left: 15%;
   
 }
 
@@ -12,6 +12,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px #549ad8;
   border: 1px solid  #549ad8;
+  width: 150%;
 }
 
 .register-sec h2 {
@@ -42,7 +43,7 @@
 
 margin: auto;
 height: 20px;
-width: 90%;
+width: 100%;
 border-radius: 6px;
 border: 1px solid #d5d3d3;
 padding: 10px;

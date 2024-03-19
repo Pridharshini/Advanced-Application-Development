@@ -9,12 +9,8 @@
   align-items: center;
   box-shadow: 0 0 10px #549ad8;
   border: 2px solid #549ad8;
+  margin-left: -120px;
 
-}
-.search-section
-{
-  border: 2px solid #549ad8;
-  
 }
 
 .navbar a {
@@ -33,7 +29,7 @@
   border: none;
   border-radius: 20px;
   padding: 10px 15px;
-  width: 300px;
+  width: 299px;
   margin-right: 200px; /* Adjust the margin as needed */
 }
 .right-section {

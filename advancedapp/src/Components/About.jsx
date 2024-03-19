@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/About.css';
 import NavigationBar from './NavigationBar';
-import Footer from './Footer';
+//import Footer from './Footer';
 
 function About() {
   return (
@@ -43,9 +43,6 @@ function About() {
           </div>
         </div>
       </section>
-      <div>
-        <Footer/>
-      </div>
     </div>
   );
 }
