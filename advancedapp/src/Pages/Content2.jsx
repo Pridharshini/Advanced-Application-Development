@@ -1,8 +1,12 @@
 import React from 'react';
 import '../Pages/Content1.css';
+import '../Components/NavBar';
+import NavBar from '../Components/NavBar';
 
 const Content2 = () => {
   return (
+    <div>
+    <NavBar/>
     <div className="container">
       <div className="course-details">
         <h1>IELTS </h1>
@@ -56,6 +60,7 @@ const Content2 = () => {
           <button className="add-to-wishlist">Add to WishList</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
