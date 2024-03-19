@@ -1,39 +1,78 @@
+import React, { useState } from 'react';
+import '../Pages/Register.css';
+// Inside the Register component
+import { Link } from 'react-router-dom';
 
-import React, { useEffect } from 'react';
-import '../Pages/Register.css'; // Import your CSS file
+// Inside the JSX
+
+
 
 const Register = () => {
-    useEffect(() => {
-        const labels = document.querySelectorAll('.form-control label');
-        labels.forEach(label => {
-            label.innerHTML = label.innerText
-                .split('')
-                .map((letter, index) => `<span style="transition-delay:${index * 40}ms">${letter}</span>`)
-                .join('');
-        });
-    }, []);
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-    return (
-        <div className="container">
-            <h1>Register</h1>
-            <form>
-                <div className="form-control">
-                    <input type="text" required name="username" />
-                    <label>Username</label>
-                </div>
-                <div className="form-control">
-                    <input type="text" required name="email" />
-                    <label>Email</label>
-                </div>
-                <div className="form-control">
-                    <input type="password" required name="password" />
-                    <label>Password</label>
-                </div>
-                <button className="btn">Register</button>
-                <p className="text">Already have an account? <a href="#">Login</a></p>
-            </form>
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here (e.g., send data to server)
+    console.log('Submitted:', { username, email, password });
+  };
+
+  return (
+    <div className="box">
+      <span className="borderLine"></span>
+      <form onSubmit={handleSubmit}>
+        <h2>REGISTER</h2>
+        <div className="inputBox">
+          <input
+            type="text"
+            value={username}
+            onChange={handleUsernameChange}
+            required
+          />
+          <span>Username</span>
+          <i></i>
         </div>
-    );
+        <div className="inputBox">
+          <input
+            type="email"
+            value={email}
+            onChange={handleEmailChange}
+            required
+          />
+          <span>Email</span>
+          <i></i>
+        </div>
+        <div className="inputBox">
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+            required
+          />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div className="links">
+          <a href="#">Already have an account?</a>
+          <Link to="/"> SIGNIN</Link>
+        </div>
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+  );
 };
 
 export default Register;

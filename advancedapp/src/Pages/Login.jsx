@@ -1,34 +1,63 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import '../Pages/Login.css';
+// Inside the Login component
+import { Link } from 'react-router-dom';
+
+
+
 
 const Login = () => {
-    useEffect(() => {
-        const labels = document.querySelectorAll('.form-control label');
-        labels.forEach(label => {
-            label.innerHTML = label.innerText
-                .split('')
-                .map((letter, index) => `<span style="transition-delay:${index * 40}ms">${letter}</span>`)
-                .join('');
-        });
-    }, []);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-    return (
-        <div className="container">
-            <h1>Login</h1>
-            <form>
-                <div className="form-control">
-                    <input type="text" required name="email" />
-                    <label>Email</label>
-                </div>
-                <div className="form-control">
-                    <input type="password" required name="password" />
-                    <label>Password</label>
-                </div>
-                <button className="btn">Login</button>
-                <p className="text">Don't have an account? <a href="#">Register</a></p>
-            </form>
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here (e.g., send data to server)
+    console.log('Submitted:', { username, password });
+  };
+
+  return (
+    <div className="box">
+      <span className="borderLine"></span>
+      <form onSubmit={handleSubmit}>
+        <h2>SIGN IN</h2>
+        <div className="inputBox">
+          <input
+            type="text"
+            value={username}
+            onChange={handleUsernameChange}
+            required
+          />
+          <span>Username</span>
+          <i></i>
         </div>
-    );
+        <div className="inputBox">
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+            required
+          />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div className="links">
+          <a href="#">Not a Member</a>
+          <Link to="/register">SIGNUP</Link>
+          
+        </div>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  );
 };
 
 export default Login;

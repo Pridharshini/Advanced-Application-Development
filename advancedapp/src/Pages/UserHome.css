@@ -1,0 +1,466 @@
+.row1 {
+    margin-top: 8%;
+}
+.a1card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+  
+  .a1card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a1im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a1contain {
+    padding: 2px 18px;
+  }
+  .a2card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -39%;
+    margin-left: 28%;
+  }
+  
+  .a2card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a2im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a2contain {
+    padding: 2px 18px;
+  }
+  .a3card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -39%;
+    margin-left: 52%;
+  }
+  
+  .a3card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a3im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a3contain {
+    padding: 2px 18px;
+  }
+  .a4card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -38.4%;
+    margin-left: 76%;
+  }
+  
+  .a4card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a4im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a4contain {
+    padding: 2px 18px;
+  }
+  .row2 {
+    margin-top: 5.5%;
+}
+  .a5card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 4.5%;
+    margin-left: 4%;
+  }
+  
+  .a5card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a5im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a5contain {
+    padding: 2px 18px;
+  }
+  .a6card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.5%;
+    margin-left: 28%;
+  }
+  
+  .a6card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a6im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a6contain {
+    padding: 2px 18px;
+  }
+  .a7card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -44.9%;
+    margin-left: 52%;
+  }
+  
+  .a7card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a7im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a7contain {
+    padding: 2px 18px;
+  }
+  .a8card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.5%;
+    margin-left: 76%;
+  }
+  
+  .a8card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a8im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a8contain {
+    padding: 2px 18px;
+  }
+  .row3 {
+    margin-top: 5.5%;
+}
+  .a9card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 4.9%;
+    margin-left: 4%;
+  }
+  
+  .a9card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a9im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a9contain {
+    padding: 2px 18px;
+  }
+  .a10card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.1%;
+    margin-left: 28%;
+  }
+  
+  .a10card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a10im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a10contain {
+    padding: 2px 18px;
+  }
+  .a11card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.4%;
+    margin-left: 52%;
+  }
+  
+  .a11card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a11im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a11contain {
+    padding: 2px 18px;
+  }
+  .a12card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.7%;
+    margin-left: 76%;
+  }
+  
+  .a12card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a12im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a12contain {
+    padding: 2px 18px;
+  }
+
+  .row4 {
+    margin-top: 5%;
+}
+  .a13card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 4%;
+  }
+  
+  .a13card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a13im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a13contain {
+    padding: 2px 18px;
+  }
+  .a14card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -49.6%;
+    margin-left: 28%;
+  }
+  
+  .a14card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a14im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a14contain {
+    padding: 2px 18px;
+  }
+  .a15card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top:-49.1%;
+    margin-left: 52%;
+  }
+  
+  .a15card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a15im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a15contain {
+    padding: 2px 18px;
+  }
+  .a16card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -48.9%;
+    margin-left: 76%;
+  }
+  
+  .a16card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a16im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a16contain {
+    padding: 2px 18px;
+  }
+
+  .row5 {
+    margin-top: 6%;
+}
+  .a17card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+     margin-top: 5%;
+    margin-left: 4%; 
+  }
+  
+  .a17card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a17im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a17contain {
+    padding: 2px 18px;
+  }
+  .a18card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.5%;
+    margin-left: 28%;
+  }
+  
+  .a18card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a18im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a18contain {
+    padding: 2px 18px;
+  }
+  .a19card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.4%;
+    margin-left: 52%;
+  }
+  
+  .a19card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a19im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a19contain {
+    padding: 2px 18px;
+  }
+  .a20card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: -45.9%;
+    margin-left: 76%;
+  }
+  
+  .a20card:hover {
+    box-shadow: 0 8px 16px 0 black;
+  }
+  
+  .a20im {
+    border-radius: 5px 5px 0 0;
+    width:100%;
+  }
+  
+  .a20contain {
+    padding: 2px 18px;
+  }
+ 
+  .viewbut
+  {
+    border: none;
+    outline: none;
+    background-color: rgb(254, 113, 108);
+    color:#fff;
+    padding: .5em 1em;
+  }
+  .a1
+  {
+    margin-left: 4%;
+  }
+  .a2
+  {
+    margin-left: 4%;
+  }
+  .a3
+  {
+    margin-left: 4%;
+  }
+  .a4
+  {
+    margin-left: 4%;
+  }
+  .a5
+  {
+    margin-left: 4%;
+  }
