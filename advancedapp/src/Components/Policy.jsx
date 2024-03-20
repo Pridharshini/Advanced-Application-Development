@@ -37,9 +37,7 @@ function PrivacyPolicy() {
           </div>
         </div>
       </section>
-      <div>
-        <Footer/>
-      </div>
+      
     </div>
   );
 }

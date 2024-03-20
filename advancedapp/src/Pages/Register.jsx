@@ -1,140 +1,96 @@
+
+
+
 import React, { useState } from 'react';
-import '../assets/Register.css';
+import '../assets/Login.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { BsEyeSlash, BsEye } from 'react-icons/bs';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import NavigationBar from '../Components/NavigationBar';
 
-function Register() {
-    const initialStateErrors = {
-        email: { required: false, invalid: false },
-        confirmPassword: { required: false, match: false },
-        name: { required: false },
-        custom_error: null,
-    };
+const Register = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  
+  const navigate = useNavigate();
 
-    const [errors, setErrors] = useState(initialStateErrors);
-    const [load, setLoad] = useState(false);
-    const [register_inputs, setRegisterInputs] = useState({
-        name: '',
-        email: '',
-        password: '',
-        confirmPassword: '',
-    });
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
-    const handleInput = (event) => {
-        setRegisterInputs({ ...register_inputs, [event.target.name]: event.target.value });
-    };
-    
-    const [showPassword, setShowPassword] = useState(false);
-    const navigate = useNavigate();
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+  };
 
-        let error = { ...initialStateErrors };
-        let hasError = false;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Check if email and password match admin credentials
+    if (email === 'admin@gmail.com' && password === 'Admin@12345') {
+      // Navigate to admin page
+      navigate('/login');
+      
+    } else if(email.length===0|| password.length===0||confirmPassword.length===0) toast("fill details")
+    else {
+      // Navigate to user page
+      navigate('/login');
+    }
+  };
 
-        if (!register_inputs.name) {
-            error.name.required = true;
-            hasError = true;
-        }
-        if (!register_inputs.email) {
-            error.email.required = true;
-            hasError = true;
-        }
-
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(register_inputs.email)) {
-            error.email.invalid = true;
-            hasError = true;
-        }
-
-        if (register_inputs.confirmPassword === "") {
-            error.confirmPassword.required = true;
-            hasError = true;
-        } else if (register_inputs.password !== register_inputs.confirmPassword) {
-            error.confirmPassword.match = true;
-            hasError = true;
-        }
-
-        if (!hasError) {
-            setLoad(true)
-             
-            navigate('/login')
-            console.log("Registration successful!");
-        }
-        setErrors(error);
-    };
-
-    return (
-        <>
-            <div>
-                <NavigationBar />
-            </div>
-            <section className="register-block">
-                <div className="container">
-                    <div className="row ">
-                        <div className="col register-sec">
-                            <h2 className="text-center-register">Register</h2>
-                            <form onSubmit={handleSubmit} className="register-form" action="">
-                                <div className="form-group">
-                                    <label htmlFor="name" className="text-uppercase">Name</label>
-                                    <input type="text" onChange={handleInput} className="form-control" name="name" id="name" />
-                                    {errors.name.required && <span className="text-danger">Name is required.</span>}
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="email" className="text-uppercase">Email</label>
-                                    <input type="text" onChange={handleInput} className="form-control" name="email" id="email" />
-                                    {errors.email.required && <span className="text-danger">Email is required.</span>}
-                                    {errors.email.invalid && <span className="text-danger">Invalid Email</span>}
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="password" className="text-uppercase">Password</label>
-                                    <div className="password-input-wrapper">
-                                        <input
-                                            className="form-control"
-                                            onChange={handleInput}
-                                            type={showPassword ? 'text' : 'password'}
-                                            name="password"
-                                            id="password"
-                                        />
-                                        <span className="password-toggle-icon" onClick={() => setShowPassword(!showPassword)}>
-                                            {showPassword ? <BsEyeSlash /> : <BsEye />}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="confirmPassword" className="text-uppercase">Confirm Password</label>
-                                    <input
-                                        className="form-control"
-                                        onChange={handleInput}
-                                        type="password"
-                                        name="confirmPassword"
-                                        id="confirmPassword"
-                                    />
-                                    {errors.confirmPassword.required && <span className="text-danger">Confirm your password</span>}
-                                    {errors.confirmPassword.match && <span className="text-danger">Passwords do not match.</span>}
-                                </div>
-                                  {load ? (
-                    <div className="text-center">
-                      <div className="spinner-border text-primary" role="status">
-                        <span className="sr-only"></span>
-                      </div>
-                    </div>
-                  ) : null}
-
-                                <input type="submit" className="register" value="Register" />
-                                <div className="clearfix"></div>
-                                <div className="form-group">
-                                    Already have an account? Please <Link to="/login">Login</Link>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
-}
+  return (
+    <div>
+      <div>
+        <NavigationBar />
+      </div>
+      <div className="custom-box">
+        <span className="custom-borderLine"></span>
+        <form onSubmit={handleSubmit}>
+          <h2>SIGN UP</h2>
+          <div className="custom-inputBox">
+            <input
+              type="text"
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
+            <span>Email</span>
+            <i></i>
+          </div>
+          <div className="custom-inputBox">
+            <input
+              type="password"
+              value={password}
+              onChange={handlePasswordChange}
+              required
+            />
+            <span>Password</span>
+            <i></i>
+          </div>
+          <div className="custom-inputBox">
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={handleConfirmPasswordChange}
+              required
+            />
+            <span>Confirm Password</span>
+            <i></i>
+          </div>
+          <div className="links">
+            <a href="#">Already a Member</a>
+            <Link to="/login">SIGIN</Link>
+          </div>
+          <ToastContainer autoClose={5000} position='bottom-right'/>
+          <input type="submit" value="Register" onClick={handleSubmit}/>
+        </form>
+      </div>
+    </div>
+  );
+};
 
 export default Register;

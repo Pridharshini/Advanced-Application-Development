@@ -7,9 +7,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 10px #549ad8;
-  border: 2px solid #549ad8;
-  margin-left: -120px;
+  box-shadow: 0 0 10px#8e0e49;
+  border: 2px solid#8e0e49;
+  margin-left: -145px;
 
 }
 
@@ -21,7 +21,7 @@
 }
 
 .logo {
-  height: 55px;
+ height: 70px;
   margin-left: 45px;
 }
 
@@ -43,6 +43,6 @@
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  color: #007bff;
+  color:#8e0e49;
 
 }

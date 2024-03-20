@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
   }
   
   .course-details {
@@ -56,13 +57,13 @@
   }
   
   .add-to-cart {
-    background-color: #007bff;
+    background-color: #8e0e49;
     color: #fff;
     border: none;
   }
   
   .add-to-wishlist {
-    background-color: #28a745;
+    background-color: #8e0e49;
     color: #fff;
     border: none;
   }

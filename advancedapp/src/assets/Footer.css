@@ -1,9 +1,12 @@
 footer {
     position: fixed;
     bottom: 0;
-    width: 96.9%;
+    width: 97.2%;
     padding: 0.5em;
-    left:-0.1%
+    left:0.5%;
+    margin-bottom:0.5%;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .container-flex {

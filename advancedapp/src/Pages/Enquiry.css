@@ -6,8 +6,8 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px #549ad8;
-  border: 1px solid#549ad8;
+    box-shadow: 0 0 10px #8e0e49;
+  border: 1px solid#8e0e49;
   }
   
   .form-group {
@@ -34,7 +34,7 @@
   
   button {
     padding: 10px 20px;
-    background-color: #007bff;
+    /* background-color:#8e0e49; */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -42,6 +42,6 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    /* background-color: #8e0e49; */
   }
   

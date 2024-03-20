@@ -2,6 +2,7 @@
 import React from 'react';
 import '../Pages/Cart.css';
 import NavBar from '../Components/NavBar';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   return (
@@ -25,7 +26,7 @@ const Cart = () => {
             <td>6 months</td>
             <td>₹10,000-₹15,000</td>
             <td>
-            <button>Make Payment</button>
+            <Link to="/payment"><button>Make Payment</button></Link>
             </td>
           </tr>
           <tr>
@@ -34,8 +35,7 @@ const Cart = () => {
             <td>3 months</td>
             <td>₹15,000-₹20,000</td>
             <td>
-              <button>Make Payment</button>
-            </td>
+            <Link to="/payment"><button>Make Payment</button></Link>            </td>
           </tr>
           <tr>
             <td>IELTS Preparation Course</td>
@@ -43,8 +43,7 @@ const Cart = () => {
             <td>4 months</td>
             <td>₹12,000-₹18,000</td>
             <td>
-              <button>Make Payment</button>
-            </td>
+            <Link to="/payment"><button>Make Payment</button></Link>            </td>
           </tr>
           {/* Add more rows as needed */}
         </tbody>

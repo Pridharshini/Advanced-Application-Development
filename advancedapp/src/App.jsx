@@ -21,13 +21,22 @@ import Enquiry from './Pages/Enquiry';
 import Cart from './Pages/Cart';
 import Payment from './Pages/Payment';
 import Content1 from './Pages/Content1';
+import Home from './Pages/Home';
+import UserEnquiry from './Pages/UserEnquiry';
+import { Suspense, lazy } from 'react';
+// import { Suspense } from 'react';
+
 
 function App() {
+
+const Loading=lazy(()=> import ("../src/Pages/UserHome"));
+
   return (
     <div>
       <BrowserRouter>
+      <Suspense fallback={Loading}>
         <Routes>
-          <Route path='/' element={<LandingPage/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/nav" element={<NavigationBar/>}/>
@@ -46,11 +55,14 @@ function App() {
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/userpay" element={<Payment/>}/>
           <Route path="/content1" element={<Content1/>}/>
+          <Route path="/userenquiry" element={<UserEnquiry/>}/>
+          <Route path="/payment" element={<Payment/>}/>
           
           
           
 
         </Routes>
+        </Suspense>
       </BrowserRouter>
       
     </div>

@@ -1,115 +1,81 @@
 
 import React, { useState } from 'react';
-import { BsEye, BsEyeSlash } from 'react-icons/bs';
 import '../assets/Login.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import NavigationBar from '../Components/NavigationBar';
 
-function Login() {
-    const initialStateErrors = {
-        email: { required: false, invalid: false },
-        password: { required: false },
-        custom_error: null,
-    };
+const Login = () => {
+  const [email, setemail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-    const [errors, setErrors] = useState(initialStateErrors);
-    const [load, setLoad] = useState(false);
-    const [register_inputs, setRegisterInputs] = useState({
-        email: '',
-        password: '',
-    });
+  const handleemailChange = (e) => {
+    setemail(e.target.value);
+  };
 
-    const handleInput = (event) => {
-        const { name, value } = event.target;
-        setRegisterInputs({ ...register_inputs, [name]: value });
-    };
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
 
-    const [showPassword, setShowPassword] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Check if email and password match admin credentials
+    if (email === 'admin@gmail.com' && password === 'Admin@12345') {
+      // Navigate to admin page
+      navigate('/admin');
+    } 
+    else if(email.length===0|| password.length===0) toast("fill details")
+    else {
+      // Navigate to user page
+      toast.success("Login sucessfully");
+      navigate('/user');
+    }
+  };
 
-    const navigate = useNavigate();
+  return (
+    <div>
+    <div>
+    <NavigationBar/>
+    </div>
+    <div className="custom-box">
+      <span className="custom-borderLine"></span>
+      <form >
+        <h2>SIGN IN</h2>
+        <div className="custom-inputBox">
+          <input
+            type="text"
+            value={email}
+            onChange={handleemailChange}
+            required
+          />
+          <span>Email</span>
+          <i></i>
+        </div>
+        <div className="custom-inputBox">
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+            required
+          />
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div className="links">
+          <a href="#">Not a Member</a>
+          <Link to="/register">SIGNUP</Link>
+        </div>
+        <ToastContainer autoClose={5000} position='bottom-right'/>
+        <input type="submit" value="Login" onClick={handleSubmit}/>
+      </form>
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        let error = { ...initialStateErrors };
-        let hasError = false;
-
-        if (!register_inputs.email) {
-            error.email.required = true;
-            hasError = true;
-        }
-
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(register_inputs.email)) {
-            error.email.invalid = true;
-            hasError = true;
-        }
-
-        if (!register_inputs.password) {
-            error.password.required = true;
-            hasError = true;
-        }
-
-        if (!hasError) {
-            setLoad(true);
-            if (register_inputs.email.trim() === 'admin@gmail.com' && register_inputs.password.trim() === 'Admin@12345') {
-                console.log("Login successful!");
-                navigate('/admin');
-            } else {
-                navigate('/user');
-            }
-        }
-        setErrors(error);
-    };
-
-    return (
-        <>
-            <div>
-                <NavigationBar />
-            </div>
-            <section className="login-block">
-                <div className="login-container">
-                    <div className="row ">
-                        <div className="col login-sec">
-                            <h2 className="text-center-login">Login</h2>
-                            <form className="login-form" onSubmit={handleSubmit}>
-                                <div className="form-group">
-                                    <label htmlFor="exampleInputEmail1" className="text-uppercase" >Email</label>
-                                    <input type="email" className="form-control" name="email" onChange={handleInput} value={register_inputs.email} />
-                                    {errors.email.required && <span className="text-danger">Email is required.</span>}
-                                    {!errors.email.required && errors.email.invalid && <span className="text-danger">Invalid Email</span>}
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="password" className="text-uppercase" >Password</label>
-                                    <div className="password-input-wrapper">
-                                        <input
-                                            className="form-control"
-                                            type={showPassword ? 'text' : 'password'}
-                                            name="password"
-                                            onChange={handleInput}
-                                            value={register_inputs.password}
-                                        />
-                                        <span className="password-toggle-icon" onClick={() => setShowPassword(!showPassword)}>
-                                            {showPassword ? <BsEyeSlash /> : <BsEye />}
-                                        </span>
-                                    </div>
-                                    {errors.password.required && <span className="text-danger">Password is required.</span>}
-                                </div>
-                                <div>
-                                    {errors.custom_error ? <span className="text-danger">{errors.custom_error}</span> : null}
-                                </div>
-                                <input type="submit" className="btn btn-login float-right" value="Login" />
-                                <div className="clearfix"></div>
-                                <div className="form-group">
-                                    Create new account ? Please <Link to="/register">Register</Link>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
-}
+    </div>
+    </div>
+  );
+};
 
 export default Login;
+
+

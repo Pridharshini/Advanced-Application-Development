@@ -1,15 +1,15 @@
 .sidebar {
-    width: 200px;
+    width: 158px;
     height: 100vh;
-    box-shadow: 0 0 10px #549ad8;
-  border: 1px solid  #549ad8;
+    box-shadow: 0 0 10px #8e0e49;
+  border: 1.5px solid #8e0e49;
     color: #160101;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 88PX;
+    margin-top: 33PX;
   }
   
   .sidebar-header {

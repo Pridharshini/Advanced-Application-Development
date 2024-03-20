@@ -3,7 +3,7 @@
 .privacy-policy-section {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: -40px;
   }
   
   .privacy-policy-box {
@@ -12,6 +12,8 @@
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .privacy-policy-section h2 {

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Pages/Content1.css';
-import '../Components/NavBar';
-import NavBar from '../Components/NavBar';
+
 
 const Content2 = () => {
   return (

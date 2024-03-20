@@ -9,9 +9,9 @@
   /* Styles for content box */
   .contentBox {
     width: 40%; 
-    margin-left: -10%; 
-    margin-top: -15%; 
-    font-family: "Poppins", sans-serif; 
+    margin-left: -7%; 
+    margin-top: -11%; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     color: #333;
    
   }
@@ -34,7 +34,7 @@
   
   .readMore {
     text-decoration: none;
-    background-color: #007bff; 
+    background-color: #8e0e49; 
     color: #fff;
     padding: 10px 20px; 
     border-radius: 5px; 
@@ -42,7 +42,7 @@
   }
   
   .readMore:hover {
-    background-color: #0056b3; 
+    background-color: #8e0e49; 
   }
   
 
@@ -107,7 +107,7 @@
   
   .cardContent .readMore {
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #8e0e49;
     color: #fff;
     padding: 8px 16px; 
     border-radius: 5px;
@@ -115,7 +115,7 @@
   }
   
   .cardContent .readMore:hover {
-    background-color: #0056b3;
+    background-color: #8e0e49;
   }
   
   /* Styles for slider */

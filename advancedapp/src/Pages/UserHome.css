@@ -1,12 +1,13 @@
 .row1 {
-  margin-top: 8%;
+  margin-top: 12%;
+  
 }
 .pa1card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
- width:20%;
+ width:45%;
   border-radius: 5px;
-  margin-top: 5%;
+  margin-top: 15%;
   margin-left: -2%;
 }
 
@@ -25,10 +26,10 @@
 .pa2card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
- width:20%;
+ width:45%;
   border-radius: 5px;
-  margin-top: -30.96%;
-  margin-left: 27%;
+  margin-top: -88.9%;
+  margin-left: 55%;
 }
 
 .pa2card:hover {
@@ -46,10 +47,10 @@
 .pa3card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
- width:20%;
+ width:45%;
   border-radius: 5px;
-  margin-top: -33.1%;
-  margin-left: 55%;
+  margin-top: -88.1%;
+  margin-left: 115%;
 }
 
 .pa3card:hover {
@@ -67,10 +68,10 @@
 .pa4card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
- width:20%;
+ width:45%;
   border-radius: 5px;
-  margin-top: -31.4%;
-  margin-left: 84%;
+  margin-top: -87.4%;
+  margin-left: 175%;
 }
 
 .pa4card:hover {
@@ -84,4 +85,98 @@
 
 .pa4contain {
   padding:2px 18px;
+}
+.row2 {
+  margin-top: 80%;
+}
+.pa5card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ width:45%;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: -105%;
+}
+
+.pa5card:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.pa5im {
+  border-radius: 5px 5px 0 0;
+  width:100%;
+}
+
+.pa5contain {
+  padding: 2px 18px;
+}
+.pa6card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ width:45%;
+  border-radius: 5px;
+  margin-top: -122.9%;
+  margin-left: -45%;
+}
+
+.pa6card:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.pa6im {
+  border-radius: 5px 5px 0 0;
+  width:100%;
+}
+
+.pa6contain {
+  padding: 2px 18px;
+}
+.pa7card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ width:45%;
+  border-radius: 5px;
+  margin-top: -124.9%;
+  margin-left: 17%;
+}
+
+.pa7card:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.pa7im {
+  border-radius: 5px 5px 0 0;
+  width:100%;
+}
+
+.pa7contain {
+  padding: 2px 18px;
+}
+.pa8card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ width:45%;
+  border-radius: 5px;
+  margin-top: -118.4%;
+  margin-left: 74%;
+}
+
+.pa8card:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+.pa8im {
+  border-radius: 5px 5px 0 0;
+  width:100%;
+}
+
+.pa8contain {
+  padding:2px 18px;
+}
+.pa1{
+  margin-left: -300px;
+}
+.pa2{
+  margin-left: -1600px;
+  margin-top: -3px;
 }

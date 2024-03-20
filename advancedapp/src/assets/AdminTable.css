@@ -5,6 +5,8 @@
     width: 100%;
     margin-top: 15%;
     font-size: large;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .course-table th,
@@ -29,7 +31,7 @@
   }
   
   .edit {
-    background-color: #007bff;
+    background-color: #8e0e49;
     color: white;
     padding: 6px 5px;
     font-size: large;

@@ -5,7 +5,7 @@ function AdminCard() {
   return (
     <div>
       <div className="aa1card card">
-        <img className="aa1im product-image" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/add-course-2797514-2317961.png" alt="Denim Jeans" />
+        <img className="aa1im product-image" src="https://cdn-icons-png.flaticon.com/512/1236/1236603.png" alt="Denim Jeans" />
         <div className="aa1contain">
           <h1>Add Courses</h1>
          <Link to="/adminadd/edit"><button className="viewbut">View</button></Link> 
@@ -13,7 +13,7 @@ function AdminCard() {
       </div>
 
       <div className="aa2card card">
-        <img className="aa2im product-image" src="https://cdn-icons-png.flaticon.com/512/3423/3423647.png" alt="Denim Jeans" />
+        <img className="aa2im product-image" src="https://cdn-icons-png.flaticon.com/512/2833/2833663.png" alt="Denim Jeans" />
         <div className="aa2contain">
           <h1>Edit Courses</h1>
           <Link to="/adminadd/edit"><button className="viewbut">View</button></Link>
@@ -29,7 +29,7 @@ function AdminCard() {
       </div>
 
       <div className="aa4card card">
-        <img className="aa4im product-image" src="https://cdn-icons-png.flaticon.com/256/1/1201.png" alt="Denim Jeans" />
+        <img className="aa4im product-image" src="https://svgsilh.com/svg/1691287.svg" alt="Denim Jeans" />
         <div className="aa4contain">
           <h1>Delete Courses</h1>
           <Link to ="/admintable"><button className="viewbut">View</button></Link>

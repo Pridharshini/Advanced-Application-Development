@@ -3,8 +3,10 @@
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
-    margin-top: 19%;
+    margin-top: 14%;
     margin-left: 5%;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .aa1card:hover {
@@ -23,7 +25,7 @@
   {
     border: none;
     outline: none;
-    background-color: rgb(254, 113, 108);
+    background-color: #8e0e49(254, 113, 108);
     color:#fff;
     padding:.5em 1em;
 }
@@ -33,8 +35,10 @@
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
-    margin-top: -22%;
+    margin-top: -32%;
     margin-left: 32%;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .aa2card:hover {
@@ -54,8 +58,10 @@
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
-    margin-top:-22%;
+    margin-top:-31%;
     margin-left:59%;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .aa3card:hover {
@@ -75,8 +81,10 @@
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
-    margin-top: -22%;
+    margin-top: -32%;
     margin-left: 86%;
+    box-shadow: 0 0 10px #8e0e49;
+    border: 2px solid #8e0e49;
   }
   
   .aa4card:hover {
@@ -90,4 +98,9 @@
   
   .aa4contain {
     padding:2px 18px;
+}
+.viewbut
+{
+  color:white;
+  background-color: #8e0e49;
 }

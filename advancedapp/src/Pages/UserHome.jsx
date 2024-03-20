@@ -26,7 +26,7 @@ function UserHome() {
               <h1>IELTS</h1>
               <p>₹12,000-₹15,000</p>
               <p>A widely accepted exam for study and work,assessing proficiency in English.</p>
-              <Link to ="/content2" ><button class="viewbut">View</button></Link>
+              <Link to ="/content1" ><button class="viewbut">View</button></Link>
             </div>
           </div>
           <div className="pa3card card">
@@ -34,8 +34,8 @@ function UserHome() {
             <div className="pa3contain">
               <h1>SELTs  </h1>
               <p>₹10,000-₹15,000</p>
-              <p> Trinity English Language qualifications Exams that are widely accepted for UK Visas,study,work Immigration purposes.</p>
-              <button class="viewbut">View</button>
+              <p> Trinity qualifications Exams that are widely accepted for UK Visas,study,work Immigration purposes.</p>
+              <Link to ="/content1" ><button class="viewbut">View</button></Link>
             </div>
           </div>
           <div className="pa4card card">
@@ -44,10 +44,53 @@ function UserHome() {
               <h1>TOEFL</h1>
               <p>₹13,000-₹20,000</p>
               <p>Assess academic English proficiency for non-native English speakers.</p>
-              <button class="viewbut">View</button>
+              <Link to ="/content1" ><button class="viewbut">View</button></Link>
             </div>
           </div>
         </div>
+
+        <div className="row2">
+        <h2 class="pa2">What to learn next</h2>
+            <div className="pa5card card">
+            <img className="pa5im product-image" src="https://m.media-amazon.com/images/I/91dIXIWsJJL._AC_UF894,1000_QL80_.jpg" alt="Denim Jeans" />
+            <div className="pa5contain">
+              <h1>TKT (Teaching Knowledge Test)</h1>
+              <p>₹13,000-₹20,000</p>
+              <p> A test for teachers to enhance their teaching skills in English language teaching.</p>
+              <button class="viewbut">View</button>
+            </div>
+          </div>
+
+          <div className="pa6card card">
+            <img className="pa6im product-image" src="https://image.isu.pub/140715143606-3f005dcbda7e1b426b36e9e3297bb5b3/jpg/page_1.jpg" alt="Denim Jeans" />
+            <div className="pa6contain">
+              <h1>IGCSE English as a Second Language (ESL)</h1>
+              <p>₹15,000-₹20,000</p>
+              <p> International qualification assessing English language proficiency for students.</p>
+              <button class="viewbut">View</button>
+            </div>
+          </div>
+          <div className="pa7card card">
+            <img className="pa7im product-image" src="https://pictures.abebooks.com/isbn/9780194568609-us.jpg" alt="Denim Jeans" />
+            <div className="pa7contain">
+              <h1>Oxford Test of English</h1>
+              <p>₹10,000-₹15,000</p>
+              <p>A computer-adaptive test assessing English proficiency at all levels of the CEFR for students. </p>
+              <button class="viewbut">View</button>
+            </div>
+          </div>
+          <div className="pa8card card">
+            <img className="pa8im product-image" src="https://imgv2-2-f.scribdassets.com/img/document/143997195/original/db4041e8b9/1709995273?v=1" alt="Denim Jeans" />
+            <div className="pa8contain">
+              <h1>City & Guilds International ESOL exams</h1>
+              <p>₹7,000-₹15,000</p>
+              <p>Recognized English language qualifications for learners worldwide.</p>
+              <button class="viewbut">View</button>
+            </div>
+          </div>  
+      </div>
+
+        
 
         
 
